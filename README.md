@@ -55,3 +55,30 @@ int main()
       //Robot is now in front of second set of pom poms, claw should have collected the thingies
     return 0; 
 }//End int
+
+
+int main()
+{
+    //wait_for_light (183);
+    //shut_down_in(115);
+    
+    Im (-415, -35);
+    printf("Lowered My Arm\n");
+    printf("I will begin my terror\n");
+    
+    while (analog(1)<3000)
+    {//Start While
+    Vroom(1000,1000,100);
+    }//End While
+    printf("Detected Black line");
+    
+    Vroom(500,500,600);
+    printf("Right");
+    Vroom(1000,0,1500);
+    Vroom(500,500,1500);
+    
+    printf("Left");
+    Vroom(0,1000,1200);
+    Vroom(500,500,1000);
+    return 0;
+}
